@@ -16,4 +16,4 @@ The repository also includes a `resume.html` file that is styled with a print-sp
 - Google Fonts (Inter, Outfit)
 
 ## 🤖 AI Disclosure
-Please note that this CV, resume structure, and design were created with the assistance of Generative AI and AI Agents.
+Please note that the projects showcased in this CV (2xl.in, GoSuggestsAI, and OtakuRank) were engineered and developed from the ground up with the assistance of Generative AI and AI Agents.
