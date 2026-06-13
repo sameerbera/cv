@@ -1,0 +1,160 @@
+/* Resume specific CSS for Print and Screen */
+:root {
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --accent-color: #2563eb;
+  --border-color: #cbd5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background-color: #f1f5f9; /* Light background for screen */
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Container simulating an A4 page */
+.resume-container {
+  max-width: 800px; /* A4 width approx */
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 3rem 4rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  margin-bottom: 0.2rem;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+}
+
+.contact-info {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.contact-info span {
+  margin: 0 0.5rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summary {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-category {
+  font-size: 0.95rem;
+}
+
+.skill-category strong {
+  color: var(--text-primary);
+  display: inline-block;
+  width: 150px;
+}
+
+.item {
+  margin-bottom: 1.2rem;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.2rem;
+}
+
+.item-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.item-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.item-subtitle {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.item-list {
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.item-list li {
+  margin-bottom: 0.3rem;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: #ffffff;
+  }
+  
+  .resume-container {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  
+  @page {
+    margin: 1.5cm; /* Standard margins */
+  }
+}

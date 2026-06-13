@@ -1,56 +1,167 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>🦊Sameer's Personal Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameer Bera - Professional CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="Images/sameer.jpg" alt="sameer profile picture"></td>
-      <td>
-        <H1>Sameer Bera </H1>
-        <p><em><strong>Working in Teleperformance as an agent</strong>.</em></p>
-        <p>I am learning html right now and want to work for a MNC company or start my own buss</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <UL>
-    <li>High School</li>
-    <li>That's all I got</li>
-  </UL>
-  <hr>
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>2019-currently working</td>
-      <td>customer service excecutive</td>
-    </tbody>
-  </table>
-  <hr>
-  <tfoot>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>i don't have any </td>
-        <td> ★★★★★★★</td>
-      </tr>
-    </table>
-  </tfoot>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">SB</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  </table>
-  <a href="hobbies.html">My Hobbies</a>
-  <a href="contactme.html">Contact Me</a>
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="hero-content glass-panel">
+      <div class="profile-container">
+        <img src="Images/sameer.jpg" alt="Sameer Bera Profile" class="profile-pic" onerror="this.src='https://via.placeholder.com/150'">
+      </div>
+      <h1 class="name">Sameer Bera</h1>
+      <h2 class="title">Aspiring Web Developer & Customer Service Professional</h2>
+      <div class="badge">Open to Work From Home Opportunities</div>
+      <p class="bio">
+        Highly motivated professional with years of experience at Concentrix and Teleperformance. Passionate about learning web development (HTML, CSS, modern tech) with a goal to transition into Software Engineering and Core API Operations.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">Get In Touch</a>
+        <a href="#projects" class="btn secondary-btn">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item glass-card">
+          <div class="timeline-date">Aug 2022 - Present</div>
+          <div class="timeline-content">
+            <h3>Senior Associate (Amazon Chat Support)</h3>
+            <h4>CONCENTRIX DAKSH SERVICES INDIA</h4>
+            <p>Handling complex customer queries, providing excellent chat support for Amazon, and ensuring maximum customer satisfaction. Utilizing communication and diagnostic skills daily.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item glass-card">
+          <div class="timeline-date">Jul 2019 - Apr 2022</div>
+          <div class="timeline-content">
+            <h3>Customer Service Executive</h3>
+            <h4>Teleperformance</h4>
+            <p>Delivered exceptional customer support, diagnosed user issues, and provided effective resolutions while consistently meeting strict KPIs.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Here are some of the recent projects I've worked on.</p>
+      <div class="grid-container">
+        
+        <!-- Project 1: 2XL -->
+        <div class="project-card glass-card">
+          <div class="project-img-placeholder" style="background: linear-gradient(45deg, #4f46e5, #818cf8);">2XL AI SaaS</div>
+          <h3>2XL (2xl.in)</h3>
+          <p>Developed an integrated AI platform featuring a Resume Builder, Domain SEO Analyzer, AI Cost Tracker, and high-speed DLT APIs.</p>
+          <a href="https://2xl.in" target="_blank" class="btn-text">View Project →</a>
+        </div>
+
+        <!-- Project 2: GoSuggestsAI -->
+        <div class="project-card glass-card">
+          <div class="project-img-placeholder" style="background: linear-gradient(45deg, #10b981, #34d399);">GoSuggestsAI</div>
+          <h3>GoSuggestsAI</h3>
+          <p>Built an AI-driven recommendation engine. Handled backend integrations and core API operations for intelligent data processing.</p>
+          <a href="https://gosuggestsai.com" target="_blank" class="btn-text">View Project →</a>
+        </div>
+
+        <!-- Project 3: OtakuRank -->
+        <div class="project-card glass-card">
+          <div class="project-img-placeholder" style="background: linear-gradient(45deg, #f43f5e, #fb7185);">OtakuRank</div>
+          <h3>OtakuRank</h3>
+          <p>Engineered a live global leaderboard for Anime and Manga with real-time voting. Designed a responsive UI with glassmorphism aesthetics.</p>
+          <a href="https://otakurank.com" target="_blank" class="btn-text">View Project →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Education Section -->
+    <section id="skills" class="section split-section">
+      <div class="skills-container glass-card">
+        <h2 class="section-title">Skills & Hobbies</h2>
+        <div class="skills-list">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">SaaS APIs</span>
+          <span class="skill-tag">Customer Service</span>
+          <span class="skill-tag">Live Chat Support</span>
+        </div>
+        <h3 class="subsection-title">Hobbies</h3>
+        <ul class="hobby-list">
+          <li>🎮 Gaming</li>
+          <li>🐦 <a href="https://twitter.com/sameerbera2" target="_blank">Twitter Socializing</a></li>
+        </ul>
+      </div>
+
+      <div class="education-container glass-card">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-item">
+          <div class="timeline-date">2016 - 2018</div>
+          <div class="timeline-content">
+            <h3>Government High School - India</h3>
+            <p>Successfully completed higher secondary education with a focus on arts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-wrapper glass-card">
+        <div class="contact-info">
+          <h3>Let's Connect!</h3>
+          <p>I'm currently looking for remote / work-from-home opportunities in web development or customer support.</p>
+          <p><strong>Email:</strong> <a href="mailto:sameerbera000@gmail.com">sameerbera000@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sameer-bera-bb4a541b1/" target="_blank">sameer-bera-bb4a541b1</a></p>
+        </div>
+        <form class="contact-form" action="mailto:sameerbera000@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="yourName">Your Name</label>
+            <input type="text" id="yourName" name="yourName" required>
+          </div>
+          <div class="form-group">
+            <label for="yourEmail">Your Email</label>
+            <input type="email" id="yourEmail" name="yourEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="yourMessage">Your Message</label>
+            <textarea id="yourMessage" name="yourMessage" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Sameer Bera. Designed with modern web practices.</p>
+  </footer>
 </body>
-
 </html>
