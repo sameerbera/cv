@@ -14,3 +14,6 @@ The repository also includes a `resume.html` file that is styled with a print-sp
 - HTML5
 - CSS3 (Custom Variables, Flexbox, Grid, Animations)
 - Google Fonts (Inter, Outfit)
+
+## 🤖 AI Disclosure
+Please note that this CV, resume structure, and design were created with the assistance of Generative AI and AI Agents.
